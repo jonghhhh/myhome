@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학생 홈페이지</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 구글 폰트 추가 (유사한 느낌) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="browser-bar"></div>
+    <header>
+        <div class="top-text">모든 것은 개인적입니다. 이 블로그도 마찬가지입니다.</div>
+        <h1 class="main-title">생각의 기차</h1>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="index.html" class="active">홈</a></li>
+                <li><a href="about.html">소개</a></li>
+                <li><a href="#blog">블로그</a></li>
+                <li><a href="board.html">게시판</a></li>
+                <li><a href="#search">검색</a></li>
+                <li class="sns-icons">
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="트위터" class="icon"></a>
+                    <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="페이스북" class="icon"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="featured-post">
+        <div class="featured-label">추천 글</div>
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80" alt="책을 든 손" class="featured-img">
+    </section>
+
+    <section id="introduction">
+        <h2>소개</h2>
+        <p>이곳은 학생들의 활동, 이벤트, 공지사항을 확인할 수 있는 공간입니다.</p>
+    </section>
+
+    <section id="bulletin-board">
+        <h2>게시판</h2>
+        <form id="postForm" autocomplete="off">
+            <input type="text" id="postInput" placeholder="새 글을 입력하세요" required>
+            <button type="submit" id="addPostButton">등록</button>
+        </form>
+        <ul id="posts"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

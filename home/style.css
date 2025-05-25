@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #fafbfc;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.top-text {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #888;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin: 0 0 18px 0;
+    letter-spacing: 1px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    border-bottom: 2px solid #eee;
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 3px;
+    transition: background 0.2s;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+    color: #7c5dfa;
+    background: #f3f0ff;
+}
+
+.sns-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    filter: grayscale(1) brightness(0.5);
+    transition: filter 0.2s;
+}
+
+.icon:hover {
+    filter: none;
+}
+
+.featured-post {
+    max-width: 500px;
+    margin: 30px auto 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 18px 18px 28px 18px;
+    position: relative;
+}
+
+.featured-label {
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    background: #f3f0ff;
+    color: #7c5dfa;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 12px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+.featured-img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+section {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 24px;
+}
+
+#bulletin-board form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+#postInput {
+    flex: 1;
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#addPostButton {
+    background: #7c5dfa;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#addPostButton:hover {
+    background: #5f3dc4;
+}
+
+#posts {
+    list-style: none;
+    padding: 0;
+}
+
+#posts li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 16px;
+}
